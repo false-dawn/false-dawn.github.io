@@ -1,0 +1,118 @@
+body {
+    font-size: 14px;
+    font-family: Calibri, Candara, Segoe;
+    line-height: 1em;
+}
+
+/*///////////////
+/// SCROLLBAR ///
+///////////////*/
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #585858 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: NeoClassical;
+    src: url('NeoClassicalGoth.otf');
+}
+
+/* DRAWBOX */
+canvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    background-color: #585858;
+    color: #fff;
+    padding: 5px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* STRUCTURE */
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.canvas {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0;
+}
+
+.commands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #585858;
+    font-family: NeoClassical, serif;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-1);
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: var(--accent-2);
+}
+
+button, input {
+    color: #585858;
+    border: 1px solid #585858;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
